@@ -1,6 +1,8 @@
 export default {
   title: '高级前端工程师面试宝典',
   lastUpdated: true,
+  base: '/mywebsite/',
+  outDir: '../dist',
   description: 'Just playing around.',
   themeConfig: {
     sidebar: [
