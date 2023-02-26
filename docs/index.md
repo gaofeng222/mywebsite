@@ -1,12 +1,32 @@
 ---
-lastUpdated: false
+layout: home
+
+title: 高级前端工程师面试宝典
+titleTemplate: 高级前端工程师面试宝典
+editLink: true
+lastUpdated: true
+hero:
+  name: Vue/React/ES6/设计模式/算法
+  text: 基础面试题
+  tagline: 全面覆盖框架和原生的知识点
+  image:
+    # src: ./logo.png
+    alt: GF 面试宝典
+  actions:
+    - theme: brand
+      text: 快速开始
+      link: /guide/introduction
+    - theme: alt
+      text: 开始了解
+      link: /browser/index
+features:
+  - icon: 🔨
+    title: 原生js/设计模式/算法/浏览器
+    details: 夯实基础，掌握理论
+  - icon: 🧩
+    title: Vue2/3
+    details: 研究原理，会用能用
+  - icon: ✈️
+    title: React
+    details: 研究原理，会用能用
 ---
-
-# 写在前面 <Badge type="tip" text="^1.0.0" />
-
----
-
-招聘面试永恒不变的话题，现在收集了前端面试的最新最前言的面试，一方面作为知识积累，另一方面也整理成册，方便自己查阅。
-
-内容涵盖了前端的原生 js，浏览器原理，框架 vue,react,css3,H5,微信小程序
-,uniapp 等方面的知识点。
