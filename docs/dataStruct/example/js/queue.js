@@ -1,59 +1,48 @@
-# 队列的实现
+// function Queue() {
+//   let item = []
+//   //入队
+//   this.enqueue = function (element) {
+//     item.push(element)
+//   }
+//   //出列
+//   this.dequeue = function () {
+//     return item.shift()
+//   }
+//   //查看第一个元素
+//   this.peek = function () {
+//     return item[0]
+//   }
+//   this.isEmpty = function () {
+//     return item.length == 0
+//   }
+//   this.size = function () {
+//     return item.length
+//   }
+//   this.toString = function () {
+//     return item.toString()
+//   }
+// }
 
-是一种受限的线性结构,基于数组的实现
+// let q = new Queue()
 
-## 队列结构的封装---es5
+// q.enqueue(1)
+// q.enqueue(2)
+// q.enqueue(3)
+// q.enqueue(4)
+// q.enqueue(5)
 
-```js
-function Queue() {
-  let item = []
-  //入队
-  this.enqueue = function (element) {
-    item.push(element)
-  }
-  //出列
-  this.dequeue = function () {
-    return item.shift()
-  }
-  //查看第一个元素
-  this.peek = function () {
-    return item[0]
-  }
-  this.isEmpty = function () {
-    return item.length == 0
-  }
-  this.size = function () {
-    return item.length
-  }
-  this.toString = function () {
-    return item.toString()
-  }
-}
-
-let q = new Queue()
-
-q.enqueue(1)
-q.enqueue(2)
-q.enqueue(3)
-q.enqueue(4)
-q.enqueue(5)
-
-console.log(q.toString())
-console.log(q.size())
-console.log(q.isEmpty())
-console.log(q.dequeue())
-console.log(q.toString())
+// console.log(q.toString())
+// console.log(q.size())
+// console.log(q.isEmpty())
+// console.log(q.dequeue())
+// console.log(q.toString())
 
 // 1,2,3,4,5
 // 5
 // false
 // 1
 // 2,3,4,5
-```
 
-## 队列的结构实现---es6
-
-```js
 class Queue {
   #item = []
   //入队
@@ -65,7 +54,7 @@ class Queue {
     return this.#item.shift()
   }
   //查看第一个元素
-  peek() {
+  front() {
     return this.#item[0]
   }
   isEmpty() {
@@ -97,11 +86,7 @@ console.log(q.toString())
 // false
 // 1
 // 2,3,4,5
-```
 
-## 算法面试题 1:击鼓传花
-
-```js
 function passGame(nameList, num) {
   let queue = new Queue()
   //将所有一次加入到队列
@@ -112,11 +97,9 @@ function passGame(nameList, num) {
 
   //开始数数
   while (queue.size() > 1) {
-    ///不断调整顺序
     for (let index = 0; index < num - 1; index++) {
       queue.enqueue(queue.dequeue())
     }
-    //删除num位置的元素
     queue.dequeue()
   }
   console.log(queue.size())
@@ -131,4 +114,3 @@ console.log(passGame(testP, 3))
 // 1
 // 3
 // Lilei
-```

@@ -1,0 +1,27 @@
+#
+
+## React route6 中类组件的跳转问题
+
+在更新到 route6 后，route5 中的 this.props.history 失效
+
+1.导入 useNavigate 组件，
+
+```bash
+import { useNavigate } from "react-router-dom";
+```
+
+2.写入
+
+```bash
+export const withNavigation = (Component) => {
+return (props) => <Component {...props} navigate={useNavigate()} />;
+};
+```
+
+3.class 组件正常写，在需要跳转的部分，把原来的 this.props.history 换为 this.props.navigate
+
+4.最后导出你的组件（我这里需要导出的是 Login）
+
+```bash
+export default withNavigation(Login);
+```

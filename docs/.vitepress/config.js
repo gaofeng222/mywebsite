@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: '高级前端工程师面试宝典',
+  title: '高级前端工程师知识体系',
   lastUpdated: true,
   cleanUrls: true,
   base: '/mywebsite/',
@@ -20,7 +20,7 @@ export default defineConfig({
     { icon: 'github', link: 'git@github.com:gaofeng222/mywebsite.git' }
   ],
   themeConfig: {
-    logo: '/logo.png',
+    // logo: '/logo.png',
     nav: [
       { text: '首页', link: '/' },
       { text: '关于我', link: '/mine/about' },
@@ -71,8 +71,16 @@ export default defineConfig({
             text: '创建型设计模式',
             items: [
               {
-                text: '工厂模式',
+                text: '工厂模式---简单工厂模式',
                 link: '/jsmode/factory'
+              },
+              {
+                text: '工厂模式---工厂方法模式',
+                link: '/jsmode/factoryMethods'
+              },
+              {
+                text: '工厂模式---抽象工厂模式',
+                link: '/jsmode/abstractFac'
               }
             ]
           }
@@ -109,39 +117,90 @@ export default defineConfig({
               { text: '选择排序', link: '/dataStruct/select' },
               { text: '插入排序', link: '/dataStruct/insert' },
               { text: '快速排序', link: '/dataStruct/quick' },
-              { text: '二分搜索', link: '/dataStruct/binarySearch' }
+              { text: '二分搜索', link: '/dataStruct/binarySearch' },
+              { text: '括号匹配', link: '/dataStruct/isBalance' }
             ]
           }
         ]
       },
       {
         text: 'js篇',
-        items: [{ text: '原型及原型链', link: '/js/proto' }]
+        items: [
+          {
+            text: 'js原理',
+            items: [
+              { text: '原型及原型链', link: '/js/proto' },
+              {
+                text: '闭包',
+                link: '/js/closure'
+              },
+              {
+                text: '异步之generator',
+                link: '/js/gen'
+              },
+              {
+                text: '深拷贝',
+                link: '/js/deepClone'
+              },
+              {
+                text: 'EventLoop',
+                link: '/js/eventloop'
+              }
+            ]
+          },
+          {
+            text: 'js手写篇',
+            items: [
+              { text: '手写call', link: '/js/mycall' },
+              { text: '手写apply', link: '/js/myapply' },
+              { text: '手写bind', link: '/js/mybind' },
+              { text: '手写promise', link: '/js/mypromise' }
+            ]
+          }
+        ]
       },
       {
         text: 'css篇',
         items: [
+          { text: '面试题汇总', link: '/css/index' },
           { text: '＜!DOCTYPE html＞ 的作用', link: '/css/doctype' },
           { text: '盒子模型复习', link: '/css/boxModel' },
-          { text: 'position的几种属性', link: '/css/index' },
           { text: '你真的了解float吗', link: '/css/float' },
-          { text: 'BFC是什么', link: '/css/bfc' }
+          { text: 'BFC是什么', link: '/css/bfc' },
+          { text: '移动端可伸缩布局方案', link: '/css/flexible' }
         ]
       },
       {
         text: 'vue2原理篇',
         items: [
+          { text: 'vue3相关', link: '/vue/vue3.md' },
           { text: '声明式和命令式编程', link: '/vue/declare' },
-          { text: 'MVVM是什么', link: '/vue/vue-base' }
+          { text: 'Vue 基础必会', link: '/vue/vue-base' },
+          { text: 'Vue的diff', link: '/vue/diff' },
+          { text: 'Vue源码解析-new Vue做了啥', link: '/vue/vue-init' }
         ]
       },
       {
         text: 'react原理篇',
-        items: [{ text: '生命周期有哪些', link: '/react/lifeCycle' }]
+        items: [
+          { text: '生命周期有哪些', link: '/react/lifeCycle' },
+          {
+            text: 'dva的connect通信',
+            link: 'react/dva'
+          }
+        ]
       },
       {
         text: 'mysql',
         items: [{ text: 'mysql数据库', link: '/mysql/index' }]
+      },
+      {
+        text: 'jdbc',
+        items: [{ text: 'jdbc快速入门', link: '/jdbc/quick' }]
+      },
+      {
+        text: 'webpack',
+        items: [{ text: 'webpack原理相关', link: '/webpack/index' }]
       }
     ],
     footer: {

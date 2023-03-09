@@ -1,36 +1,24 @@
-# 工厂模式
+// function createPerson(name, age) {
+//   var obj = {}
+//   obj.name = name
+//   obj.age = age
 
-创建型设计模式是一类处理对象创建的设计模式，通过某种方式控制对象的创建来避免基本对象创建时可能导致设计上的问题或增加设计上的复杂度。
+//   obj.getPersonInfo = function () {
+//     return this.name + ', ' + this.age
+//   }
 
-## 简单工厂模式
+//   return obj
+// }
 
-**1. 定义**  
-又叫静态工厂方法,由一个工厂对象决定创建一个产品对象类的实例。主要是用来创建同一类对象。
+// let p1 = createPerson('guojing', 30)
+// let p2 = createPerson('yangguo', 20)
 
-```js
-function createPerson(name, age) {
-  var obj = {}
-  obj.name = name
-  obj.age = age
-
-  obj.getPersonInfo = function () {
-    return this.name + ', ' + this.age
-  }
-
-  return obj
-}
-
-let p1 = createPerson('guojing', 30)
-let p2 = createPerson('yangguo', 20)
-
-console.log(p1.getPersonInfo())
-console.log(p2.getPersonInfo())
+// console.log(p1.getPersonInfo())
+// console.log(p2.getPersonInfo())
 
 //guojing, 30
 //yangguo, 20
-```
 
-```js
 //反例
 let LoginAlert = function (text) {
   this.content = text
@@ -197,12 +185,36 @@ let userConfirm = createPopHigh('confirm', '用户名必须点击确认或者取
 userConfirm.show()
 userConfirm.confirmHandle()
 
-console.log(userNameAlert1 == userConfirm) // false
-```
+console.log(userNameAlert1 == userConfirm)
 
-## 总结：
+// false
 
-使用工厂方法创建的对象，使用的构造函数都是 Object，所以创建的对象都是 Object 这个类型，就导致我们无法区分出多种不同类型的对象。所以我们一般使用构造函数创建对象。
+// ~(function () {
+//   var a = 1
 
-第一种是通过类实例化对象创建  
-第二种是通过创建一个新对象然后包装增强其属性和功能来实现的。他们之间的差异性也造成前面通过类创建的对象，如果这些类继承同一父类，那么他们的父类原型上的方法是可以共用的。而后面寄生方式创建的对象都是一个新的个体，所以他们的方法就不能共用了。当然选择哪种工厂方式来实现你的需求还要看你是如何分析你的需求的。
+//   function a() {
+//     // 此处的a只能在函数体内用到
+//     console.log(a)
+//     console.log(2)
+//   }
+//   a()
+// })()
+
+// ~(function () {
+//   var a = 1
+
+//   var a = function () {
+//     // 此处的a只能在函数体内用到
+//     // console.log(a)
+//     console.log(2)
+//   }
+//   a()
+// })()
+
+var a = 2
+~(function () {
+  console.log(a)
+  //   var a = 3
+  a = 3
+  console.log(a)
+})()

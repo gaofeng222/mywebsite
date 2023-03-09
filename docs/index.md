@@ -1,17 +1,17 @@
 ---
 layout: home
 
-title: 高级前端工程师面试宝典
-titleTemplate: 高级前端工程师面试宝典
+title: 高级前端工程师知识体系
+titleTemplate: 高级前端工程师知识体系
 editLink: true
 lastUpdated: true
 hero:
   name: Vue/React/ES6/设计模式/算法
-  text: 基础面试题
+  text: 点线面知识体系
   tagline: 全面覆盖框架和原生的知识点
   image:
     # src: ./logo.png
-    alt: GF 面试宝典
+    alt: GF 知识体系
   actions:
     - theme: brand
       text: 快速开始
