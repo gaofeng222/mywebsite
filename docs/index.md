@@ -10,7 +10,7 @@ hero:
   text: 点线面知识体系
   tagline: 全面覆盖框架和原生的知识点
   image:
-    # src: ./logo.png
+    src: /logo.png
     alt: GF 知识体系
   actions:
     - theme: brand

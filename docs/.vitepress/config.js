@@ -12,15 +12,17 @@ export default defineConfig({
       level: [0, 0]
     }
   },
+  head: [['link', { rel: 'icon', href: './favicon.ico' }]], //必须是相对路径
   editLink: {
     pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
     text: 'github上编辑错误'
   },
-  socialLinks: [
-    { icon: 'github', link: 'git@github.com:gaofeng222/mywebsite.git' }
-  ],
+
   themeConfig: {
-    // logo: '/logo.png',
+    logo: '/logo.png',
+    socialLinks: [
+      { icon: 'github', link: 'git@github.com:gaofeng222/mywebsite.git' }
+    ],
     nav: [
       { text: '首页', link: '/' },
       { text: '关于我', link: '/mine/about' },
@@ -29,8 +31,28 @@ export default defineConfig({
         text: '相关链接',
         items: [
           {
-            text: 'github',
-            link: 'https://github.com/gaofeng222/mywebsite.git'
+            text: '汤姆大叔的博客',
+            link: 'https://www.cnblogs.com/TomXu/tag/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/'
+          },
+          {
+            text: '张鑫旭博客',
+            link: 'https://www.zhangxinxu.com/wordpress/'
+          },
+          {
+            text: '前端小智',
+            link: 'https://segmentfault.com/u/minnanitkong'
+          },
+          {
+            text: '腾讯Web前端 Alloy',
+            link: 'http://www.alloyteam.com/'
+          },
+          {
+            text: '淘系前端团队',
+            link: 'https://fed.taobao.org/?spm=taofed.bloginfo.header.1.3baf5ac8ngjb7z'
+          },
+          {
+            text: '牧云云博客',
+            link: 'https://github.com/MuYunyun/blog'
           }
         ]
       }
@@ -53,7 +75,7 @@ export default defineConfig({
                 text: 'http/https/http2的比较',
                 link: '/browser/http'
               },
-              { text: '401和402的认识', link: '/browser/401' },
+              { text: '401和403的认识', link: '/browser/401' },
               { text: '关于websocket', link: '/browser/websocket' },
               {
                 text: '浏览器输入 url 到页面展示出来的全过程',
@@ -118,7 +140,8 @@ export default defineConfig({
               { text: '插入排序', link: '/dataStruct/insert' },
               { text: '快速排序', link: '/dataStruct/quick' },
               { text: '二分搜索', link: '/dataStruct/binarySearch' },
-              { text: '括号匹配', link: '/dataStruct/isBalance' }
+              { text: '括号匹配', link: '/dataStruct/isBalance' },
+              { text: 'arrayToTree', link: '/dataStruct/digui' }
             ]
           }
         ]
@@ -145,6 +168,14 @@ export default defineConfig({
               {
                 text: 'EventLoop',
                 link: '/js/eventloop'
+              },
+              {
+                text: '防抖与节流',
+                link: '/js/debounce'
+              },
+              {
+                text: 'new发生了什么',
+                link: '/js/new'
               }
             ]
           },
@@ -167,18 +198,25 @@ export default defineConfig({
           { text: '盒子模型复习', link: '/css/boxModel' },
           { text: '你真的了解float吗', link: '/css/float' },
           { text: 'BFC是什么', link: '/css/bfc' },
-          { text: '移动端可伸缩布局方案', link: '/css/flexible' }
+          { text: '移动端可伸缩布局方案', link: '/css/flexible' },
+          { text: 'vmin和vw的区别', link: '/css/vmin' },
+          { text: '移动端的head配置', link: '/css/head.md' }
         ]
       },
       {
         text: 'vue2原理篇',
         items: [
-          { text: 'vue3相关', link: '/vue/vue3.md' },
           { text: '声明式和命令式编程', link: '/vue/declare' },
           { text: 'Vue 基础必会', link: '/vue/vue-base' },
           { text: 'Vue的diff', link: '/vue/diff' },
-          { text: 'Vue源码解析-new Vue做了啥', link: '/vue/vue-init' }
+          { text: 'Vue源码解析-new Vue做了啥', link: '/vue/vue-init' },
+          { text: '响应式的理解', link: '/vue/defineProperty' },
+          { text: 'Vue中的this', link: '/vue/v-this' }
         ]
+      },
+      {
+        text: 'vue3原理篇',
+        items: [{ text: 'vue3相关', link: '/vue/vue3.md' }]
       },
       {
         text: 'react原理篇',
@@ -186,7 +224,15 @@ export default defineConfig({
           { text: '生命周期有哪些', link: '/react/lifeCycle' },
           {
             text: 'dva的connect通信',
-            link: 'react/dva'
+            link: '/react/dva'
+          },
+          {
+            text: 'React Fiber 原理实现',
+            link: '/react/fiber'
+          },
+          {
+            text: 'React中的setState是异步的吗？',
+            link: '/react/setState'
           }
         ]
       },
@@ -201,6 +247,24 @@ export default defineConfig({
       {
         text: 'webpack',
         items: [{ text: 'webpack原理相关', link: '/webpack/index' }]
+      },
+      {
+        text: 'winSys',
+        items: [
+          {
+            text: 'win10系统缺失hosts文件',
+            link: '/win10/host.md'
+          }
+        ]
+      },
+      {
+        text: 'web浏览器安全',
+        items: [
+          { text: '点击劫持', link: '/webSafe/clickAttack' },
+          { text: 'csrf', link: '/webSafe/csrf' },
+          { text: 'xss', link: '/webSafe/xss' },
+          { text: '浏览器sandbox', link: '/webSafe/sandbox' }
+        ]
       }
     ],
     footer: {

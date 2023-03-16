@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./js/suanfa.js"></script>
   </head>
   <body>
-    <input type="text" id="ipt" />
+    <script src="./js/demo2.js"></script>
+    <div id="app">
+      <p>a的值:{{a.a}}</p>
+      <p>b的值:{{a.b}}</p>
+    </div>
+
+    <script>
+      let vm = new Vue({ el: '#app', data: { a: { a: '是a', b: '是b' } } })
+    </script>
   </body>
 </html>
