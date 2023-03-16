@@ -13,16 +13,25 @@ export default defineConfig({
     }
   },
   head: [['link', { rel: 'icon', href: './favicon.ico' }]], //必须是相对路径
-  editLink: {
-    pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
-    text: 'github上编辑错误'
-  },
 
   themeConfig: {
     logo: '/logo.png',
+
     socialLinks: [
       { icon: 'github', link: 'git@github.com:gaofeng222/mywebsite.git' }
     ],
+    lastUpdatedText: '上次更新', // string | boolean
+    // editLink: {
+    //   pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+    //   text: 'github上编辑错误'
+    // },
+    outline: {
+      label: '本页内容'
+    },
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
     nav: [
       { text: '首页', link: '/' },
       { text: '关于我', link: '/mine/about' },
