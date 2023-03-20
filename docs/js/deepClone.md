@@ -1,5 +1,13 @@
 # 深拷贝的几种方式
 
+## 乞丐版
+
+```js
+JSON.parse(JSON.stringify(someObj))
+```
+
+## 专业版
+
 ```js
 let obj = {
   age: 5,
@@ -56,3 +64,37 @@ console.log(obj3, 'obj3') //function,undefined的数据无法拷贝
  *
  */
 ```
+
+## 补充
+
+```js
+function deepClone(obj) {
+  let result
+  if (typeof obj == 'object') {
+    //判断是数组还是对象
+    result = obj.constructor == Array ? [] : {}
+    for (let key in obj) {
+      result[key] = typeof obj[key] == 'object' ? deepClone(obj[key]) : obj[key]
+    }
+  } else {
+    result = obj
+  }
+  return result
+}
+
+let obj = {
+  age: 5,
+  hobby: [1, 2, 3],
+  getAge() {
+    console.log(this.age)
+  },
+  home: ['背景', '上哈'],
+  name: undefined
+}
+
+const result = deepClone(obj)
+
+console.log(result, 'result')
+```
+
+[手写系列参考](https://juejin.cn/post/6844903809206976520#heading-19)

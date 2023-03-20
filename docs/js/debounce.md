@@ -27,10 +27,10 @@ window.onload = function () {
 function debounce(fn, ms) {
   let timeId = null
   return function () {
-    if (timeId != null) {
+    if (timeId) {
       clearTimeout(timeId)
     }
-    console.log(this, 'this')
+    // console.log(this, 'this')
     timeId = setTimeout(() => {
       // fn.apply(this, arguments)
       fn.apply(this)
@@ -70,6 +70,80 @@ function throttle(fn, ms) {
       fn.apply(this)
       timeId = null
     }, ms)
+  }
+}
+```
+
+## 补充
+
+```js
+function debounce(fn, wait = 2000, immediate) {
+  let timer
+
+  return function () {
+    if (immediate) {
+      return fn.apply(this, arguments)
+    }
+    if (timer) {
+      clearTimeout(timer)
+    }
+    timer = setTimeout(() => {
+      fn.apply(this, arguments)
+    }, wait)
+  }
+}
+
+// window.addEventListener('resize', () => {
+//     console.log('正常触发')
+// })
+
+// window.addEventListener('resize', debounce(() => {
+//     console.log('延迟触发')
+// }))
+
+function throttle(fn, wait = 2000) {
+  let prev = new Date()
+  return function () {
+    const args = arguments
+    let now = new Date()
+    if (now - prev > wait) {
+      fn.apply(this, args)
+      prev = new Date()
+    }
+  }
+}
+
+window.addEventListener('resize', () => {
+  console.log('正常触发')
+})
+
+window.addEventListener(
+  'resize',
+  throttle(() => {
+    console.log('延迟触发')
+  })
+)
+
+//组合起来
+
+function throttle(fn, wait, isDebounce) {
+  let lastCall = 0,
+    timer
+  return function (...args) {
+    if (isDebounce) {
+      if (timer) {
+        clearTimeout(timer)
+      }
+      timer = setTimeout(() => {
+        fn.apply(...args)
+      }, wait)
+    } else {
+      let now = new Date()
+      if (now - lastCall > wait) {
+        fn.apply(this, ...args)
+        lastCall = new Date()
+      }
+    }
   }
 }
 ```

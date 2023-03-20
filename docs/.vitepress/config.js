@@ -150,7 +150,8 @@ export default defineConfig({
               { text: '快速排序', link: '/dataStruct/quick' },
               { text: '二分搜索', link: '/dataStruct/binarySearch' },
               { text: '括号匹配', link: '/dataStruct/isBalance' },
-              { text: 'arrayToTree', link: '/dataStruct/digui' }
+              { text: 'arrayToTree', link: '/dataStruct/digui' },
+              { text: '常见算法练习', link: '/dataStruct/lianxi' }
             ]
           }
         ]
@@ -255,7 +256,11 @@ export default defineConfig({
       },
       {
         text: 'webpack',
-        items: [{ text: 'webpack原理相关', link: '/webpack/index' }]
+        items: [
+          { text: 'webpack原理相关', link: '/webpack/index' },
+          { text: 'webpack热更新', link: '/webpack/hot' },
+          { text: 'webpack多线程打包', link: '/webpack/happypack' }
+        ]
       },
       {
         text: 'winSys',
