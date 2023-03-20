@@ -5,7 +5,7 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   base: '/mywebsite/',
-  outDir: '../dist',
+  outDir: './dist',
   description: "Gaofeng's website",
   markdown: {
     headers: {
