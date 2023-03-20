@@ -259,7 +259,7 @@ export default defineConfig({
         items: [
           { text: 'webpack原理相关', link: '/webpack/index' },
           { text: 'webpack热更新', link: '/webpack/hot' },
-          { text: 'webpack多线程打包', link: '/webpack/happypack' }
+          { text: 'webpack多线程打包编译', link: '/webpack/happypack' }
         ]
       },
       {
