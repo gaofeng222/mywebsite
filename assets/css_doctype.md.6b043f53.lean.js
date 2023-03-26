@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a,a as o}from"./app.e6464ad1.js";const T=JSON.parse('{"title":"<!DOCTYPE html> 的作用","description":"","frontmatter":{},"headers":[],"relativePath":"css/doctype.md","lastUpdated":1677403524000}'),p={name:"css/doctype.md"},s=o("",19),l=[s];function c(n,d,r,i,h,D){return a(),e("div",null,l)}const y=t(p,[["render",c]]);export{T as __pageData,y as default};

@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as l}from"./app.e6464ad1.js";const i=JSON.parse('{"title":"函数式编程--手写 mycall","description":"","frontmatter":{},"headers":[],"relativePath":"js/mycall.md","lastUpdated":1678346902000}'),p={name:"js/mycall.md"},o=l("",4),e=[o];function t(c,r,y,D,F,A){return n(),a("div",null,e)}const d=s(p,[["render",t]]);export{i as __pageData,d as default};

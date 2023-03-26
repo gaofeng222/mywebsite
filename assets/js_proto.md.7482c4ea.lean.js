@@ -1,0 +1,1 @@
+import{_ as t,c as e,o}from"./app.e6464ad1.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"js/proto.md","lastUpdated":1677403524000}'),a={name:"js/proto.md"};function r(s,c,n,p,d,_){return o(),e("div")}const f=t(a,[["render",r]]);export{m as __pageData,f as default};

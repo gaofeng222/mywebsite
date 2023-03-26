@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.e6464ad1.js";const C=JSON.parse('{"title":"可伸缩布局方案","description":"","frontmatter":{},"headers":[],"relativePath":"css/flexible.md","lastUpdated":1678346902000}'),p={name:"css/flexible.md"},o=l("",6),e=[o];function t(c,r,F,y,D,i){return a(),n("div",null,e)}const d=s(p,[["render",t]]);export{C as __pageData,d as default};

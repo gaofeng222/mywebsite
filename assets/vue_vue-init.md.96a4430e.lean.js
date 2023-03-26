@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.e6464ad1.js";const C=JSON.parse('{"title":"源码解读 —— Vue 初始化过程","description":"","frontmatter":{},"headers":[],"relativePath":"vue/vue-init.md","lastUpdated":1678346902000}'),p={name:"vue/vue-init.md"},o=l("",5),e=[o];function t(c,r,y,F,D,i){return a(),n("div",null,e)}const d=s(p,[["render",t]]);export{C as __pageData,d as default};

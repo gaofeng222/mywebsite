@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a}from"./app.e6464ad1.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"css/float.md","lastUpdated":1677403524000}'),s={name:"css/float.md"};function o(r,c,n,p,d,_){return a(),e("div")}const i=t(s,[["render",o]]);export{l as __pageData,i as default};

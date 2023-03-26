@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as e}from"./app.e6464ad1.js";const D=JSON.parse('{"title":"mysql 数据库相关操作","description":"","frontmatter":{},"headers":[],"relativePath":"mysql/index.md","lastUpdated":1677403524000}'),l={name:"mysql/index.md"},p=e("",18),o=[p];function t(c,r,i,d,C,h){return n(),a("div",null,o)}const A=s(l,[["render",t]]);export{D as __pageData,A as default};

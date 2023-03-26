@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as o}from"./app.e6464ad1.js";const y=JSON.parse('{"title":"Win10 找不到 hosts 文件解决方法","description":"","frontmatter":{},"headers":[],"relativePath":"win10/host.md","lastUpdated":1678935368000}'),e={name:"win10/host.md"},t=o("",7),p=[t];function l(r,c,i,D,d,h){return n(),a("div",null,p)}const A=s(e,[["render",l]]);export{y as __pageData,A as default};

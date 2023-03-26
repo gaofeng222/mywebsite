@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,a as o}from"./app.e6464ad1.js";const h=JSON.parse('{"title":"Vue 基础必会","description":"","frontmatter":{},"headers":[],"relativePath":"vue/vue-base.md","lastUpdated":1678935368000}'),s={name:"vue/vue-base.md"},n=o("",80),l=[n];function d(c,r,p,i,y,D){return a(),t("div",null,l)}const g=e(s,[["render",d]]);export{h as __pageData,g as default};

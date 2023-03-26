@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as s,a as n}from"./app.e6464ad1.js";const F=JSON.parse('{"title":"React Fiber 原理实现","description":"","frontmatter":{},"headers":[],"relativePath":"react/fiber.md","lastUpdated":1678935368000}'),r={name:"react/fiber.md"},t=n("",13),o=[t];function p(i,l,c,d,h,b){return s(),e("div",null,o)}const _=a(r,[["render",p]]);export{F as __pageData,_ as default};

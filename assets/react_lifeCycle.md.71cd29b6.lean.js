@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./app.e6464ad1.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"react/lifeCycle.md","lastUpdated":1677403524000}'),c={name:"react/lifeCycle.md"};function r(o,s,n,l,i,p){return a(),t("div")}const f=e(c,[["render",r]]);export{_ as __pageData,f as default};

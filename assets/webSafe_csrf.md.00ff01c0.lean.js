@@ -1,0 +1,1 @@
+import{_ as e,c as r,o,a}from"./app.e6464ad1.js";const f=JSON.parse('{"title":"CSRF 攻击","description":"","frontmatter":{},"headers":[],"relativePath":"webSafe/csrf.md","lastUpdated":1678935368000}'),i={name:"webSafe/csrf.md"},t=a("",27),n=[t];function s(p,l,d,h,S,c){return o(),r("div",null,n)}const k=e(i,[["render",s]]);export{f as __pageData,k as default};

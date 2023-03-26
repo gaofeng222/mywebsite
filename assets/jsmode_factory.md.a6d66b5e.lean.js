@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.e6464ad1.js";const i=JSON.parse('{"title":"工厂模式","description":"","frontmatter":{},"headers":[],"relativePath":"jsmode/factory.md","lastUpdated":1678346902000}'),p={name:"jsmode/factory.md"},o=l("",9),e=[o];function t(c,r,F,y,D,A){return a(),n("div",null,e)}const f=s(p,[["render",t]]);export{i as __pageData,f as default};

@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.e6464ad1.js";const i=JSON.parse('{"title":"快速排序","description":"","frontmatter":{},"headers":[],"relativePath":"dataStruct/quick.md","lastUpdated":1677403524000}'),p={name:"dataStruct/quick.md"},o=l("",5),t=[o];function e(c,r,y,F,D,A){return a(),n("div",null,t)}const d=s(p,[["render",e]]);export{i as __pageData,d as default};

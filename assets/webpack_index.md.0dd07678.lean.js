@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as p,a}from"./app.e6464ad1.js";const g=JSON.parse('{"title":"webpack 必会","description":"","frontmatter":{},"headers":[],"relativePath":"webpack/index.md","lastUpdated":1678346902000}'),c={name:"webpack/index.md"},d=a("",31),l=[d];function i(n,r,t,s,u,h){return p(),o("div",null,l)}const k=e(c,[["render",i]]);export{g as __pageData,k as default};

@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as o}from"./app.e6464ad1.js";const A=JSON.parse('{"title":"new 绑定","description":"","frontmatter":{},"headers":[],"relativePath":"js/new.md","lastUpdated":1678935368000}'),e={name:"js/new.md"},l=o("",5),t=[l];function p(c,r,i,_,d,y){return a(),n("div",null,t)}const D=s(e,[["render",p]]);export{A as __pageData,D as default};

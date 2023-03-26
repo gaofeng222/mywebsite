@@ -1,0 +1,1 @@
+import{_ as e,c as t,o,a as d}from"./app.e6464ad1.js";const m=JSON.parse('{"title":"Vue 组件加载顺序","description":"","frontmatter":{},"headers":[],"relativePath":"vue/mounted.md","lastUpdated":1679798557000}'),a={name:"vue/mounted.md"},r=d("",6),c=[r];function n(p,s,_,u,f,i){return o(),t("div",null,c)}const h=e(a,[["render",n]]);export{m as __pageData,h as default};

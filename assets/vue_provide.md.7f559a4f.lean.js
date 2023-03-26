@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as p}from"./app.e6464ad1.js";const C=JSON.parse('{"title":"vue 中的 provide& inject","description":"","frontmatter":{},"headers":[],"relativePath":"vue/provide.md","lastUpdated":1679798557000}'),l={name:"vue/provide.md"},o=p("",8),e=[o];function t(c,r,i,y,F,D){return a(),n("div",null,e)}const A=s(l,[["render",t]]);export{C as __pageData,A as default};

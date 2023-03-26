@@ -1,0 +1,1 @@
+import{_ as a,c as e,o,a as i}from"./app.e6464ad1.js";const m=JSON.parse('{"title":"沙盒（sandbox）","description":"","frontmatter":{},"headers":[],"relativePath":"webSafe/sandbox.md","lastUpdated":1678935368000}'),n={name:"webSafe/sandbox.md"},r=i("",13),t=[r];function l(p,s,d,h,c,_){return o(),e("div",null,t)}const x=a(n,[["render",l]]);export{m as __pageData,x as default};

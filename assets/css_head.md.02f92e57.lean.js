@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.e6464ad1.js";const i=JSON.parse('{"title":"移动端 H5 头部的各种参数配置","description":"","frontmatter":{},"headers":[],"relativePath":"css/head.md","lastUpdated":1678935368000}'),o={name:"css/head.md"},p=l("",2),t=[p];function e(c,D,F,r,y,C){return a(),n("div",null,t)}const u=s(o,[["render",e]]);export{i as __pageData,u as default};

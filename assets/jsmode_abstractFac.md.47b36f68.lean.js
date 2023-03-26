@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.e6464ad1.js";const i=JSON.parse('{"title":"抽象工厂模式","description":"","frontmatter":{},"headers":[],"relativePath":"jsmode/abstractFac.md","lastUpdated":1678346902000}'),p={name:"jsmode/abstractFac.md"},o=l("",9),e=[o];function t(c,r,F,y,D,A){return a(),n("div",null,e)}const d=s(p,[["render",t]]);export{i as __pageData,d as default};

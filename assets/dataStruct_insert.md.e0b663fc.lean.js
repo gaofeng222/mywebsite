@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.e6464ad1.js";const i=JSON.parse('{"title":"插入排序","description":"","frontmatter":{},"headers":[],"relativePath":"dataStruct/insert.md","lastUpdated":1677403524000}'),p={name:"dataStruct/insert.md"},o=l("",6),e=[o];function t(c,r,y,F,D,A){return a(),n("div",null,e)}const d=s(p,[["render",t]]);export{i as __pageData,d as default};

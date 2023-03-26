@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a as r}from"./app.e6464ad1.js";const v=JSON.parse('{"title":"声明式和命令式编程","description":"","frontmatter":{},"headers":[],"relativePath":"vue/declare.md","lastUpdated":1677403524000}'),d={name:"vue/declare.md"},i=r("",6),c=[i];function o(s,l,h,n,_,p){return t(),a("div",null,c)}const m=e(d,[["render",o]]);export{v as __pageData,m as default};

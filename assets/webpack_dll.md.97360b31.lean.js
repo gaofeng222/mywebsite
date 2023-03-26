@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.e6464ad1.js";const i=JSON.parse('{"title":"webpack 之 dll 配置","description":"","frontmatter":{},"headers":[],"relativePath":"webpack/dll.md","lastUpdated":1679798557000}'),p={name:"webpack/dll.md"},o=l("",16),e=[o];function t(c,r,C,D,y,F){return a(),n("div",null,e)}const d=s(p,[["render",t]]);export{i as __pageData,d as default};

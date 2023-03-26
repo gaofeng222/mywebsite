@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as l}from"./app.e6464ad1.js";const i=JSON.parse('{"title":"webpack 之热更新","description":"","frontmatter":{},"headers":[],"relativePath":"webpack/hot.md","lastUpdated":1679323136000}'),p={name:"webpack/hot.md"},o=l("",8),e=[o];function t(c,r,y,F,D,C){return n(),a("div",null,e)}const d=s(p,[["render",t]]);export{i as __pageData,d as default};
