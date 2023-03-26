@@ -5,7 +5,7 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   base: '/mywebsite/',
-  outDir: './dist',
+  outDir: '../dist',
   description: "Gaofeng's website",
   markdown: {
     headers: {
@@ -18,7 +18,8 @@ export default defineConfig({
     logo: '/logo.png',
 
     socialLinks: [
-      { icon: 'github', link: 'git@github.com:gaofeng222/mywebsite.git' }
+      { icon: 'github', link: 'git@github.com:gaofeng222/mywebsite.git' },
+      { icon: 'discord', link: 'https://blog.csdn.net/qq_27702739' }
     ],
     lastUpdatedText: '上次更新', // string | boolean
     // editLink: {
@@ -91,6 +92,12 @@ export default defineConfig({
                 link: '/browser/urls'
               },
               { text: '三次握手和四次挥手', link: 'browser/threeHands' }
+            ]
+          },
+          {
+            text: 'websocket相关',
+            items: [
+              { text: 'websocket之socket.io实战', link: 'browser/socket' }
             ]
           }
         ]
@@ -219,14 +226,22 @@ export default defineConfig({
           { text: '声明式和命令式编程', link: '/vue/declare' },
           { text: 'Vue 基础必会', link: '/vue/vue-base' },
           { text: 'Vue的diff', link: '/vue/diff' },
+          { text: 'Vue组件加载顺序', link: '/vue/mounted' },
           { text: 'Vue源码解析-new Vue做了啥', link: '/vue/vue-init' },
           { text: '响应式的理解', link: '/vue/defineProperty' },
-          { text: 'Vue中的this', link: '/vue/v-this' }
+          { text: 'Vue中的this', link: '/vue/v-this' },
+          { text: 'Vue中v-model与aync', link: '/vue/vmodel' },
+          { text: 'Vue中dispatch与broadcast', link: '/vue/dispatch' },
+          { text: 'Vue中provide和inject', link: '/vue/provide' },
+          { text: 'Vue中事件总线eventBus', link: '/vue/bus' }
         ]
       },
       {
         text: 'vue3原理篇',
-        items: [{ text: 'vue3相关', link: '/vue/vue3.md' }]
+        items: [
+          { text: 'vue3相关', link: '/vue/vue3/vue3.md' },
+          { text: 'vue3读书笔记之命令式与声明式', link: '/vue/vue3/declare.md' }
+        ]
       },
       {
         text: 'react原理篇',
@@ -259,7 +274,8 @@ export default defineConfig({
         items: [
           { text: 'webpack原理相关', link: '/webpack/index' },
           { text: 'webpack热更新', link: '/webpack/hot' },
-          { text: 'webpack多线程打包编译', link: '/webpack/happypack' }
+          { text: 'webpack多线程打包编译', link: '/webpack/happypack' },
+          { text: 'webpack里面的dll打包配置', link: '/webpack/dll' }
         ]
       },
       {
